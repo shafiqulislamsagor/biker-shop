@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- logo / favicon link -->
+    <link
+      rel="shortcut icon"
+      href="images/icons/bike-shop.png"
+      type="image/x-icon"
+    />
+    <title>Biker Shop</title>
+    <!-- tailwind CSS and daisyUI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customised -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#E76F51',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- header parts -->
+    <header>
+      <div
+        class="hero min-h-screen items-start"
+        style="background-image: url(images/others/Rectangle\ 4705.png)"
+      >
+        <div
+          class="hero-overlay"
+          style="
+            background-image: linear-gradient(
+              90deg,
+              #181818 0%,
+              rgba(24, 24, 24, 0.32) 24.48%,
+              rgba(24, 24, 24, 0) 100%
+            );
+          "
+        >
+          <!-- navbar -->
+          <div class="navbar container mx-auto">
+            <div class="navbar-start w-auto flex-1">
+              <div class="dropdown text-white">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-24"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl md:text-4xl text-white"
+                >Biker Shop</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 md:text-base text-white">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="btn bg-clifford border-0 text-white" onclick="my_modal_5.showModal()">
+                Login
+              </button>
+              <dialog
+                id="my_modal_5"
+                class="modal modal-bottom sm:modal-middle w-11/12 mx-auto"
+              >
+                <div class="modal-box">
+                  <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mx-auto">
+                    <form class="card-body">
+                  <h1 class="text-3xl font-bold align-middle">Login now!</h1>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Email</span>
+                        </label>
+                        <input type="email" placeholder="email" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input type="password" placeholder="password" class="input input-bordered" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn  bg-green-500 hover:bg-green-700 hover:text-white">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </div>
+        </div>
+
+        <!-- contain banner -->
+      </div>
+    </header>
+    <!-- container parts -->
+    <main></main>
+    <!-- footer parts -->
+    <footer></footer>
+    <!-- font awesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/763e0e1bf4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
